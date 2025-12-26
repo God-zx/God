@@ -29,12 +29,12 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 # Initialize the bot
 bot = Client(
     "bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
+    api_id=34943077,
+    api_hash="11aeec678349456f1d190f02975ed89f",
+    bot_token="8333767937:AAEY8jeOnTsflwMPvs_LKdpjmGBMi2Kjsd0"
 )
 
-my_name = "JB"
+my_name = "SUMIT"
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "/modules/youtube_cookies.txt")
 
