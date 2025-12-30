@@ -429,7 +429,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄 ✅ 𝐓𝐈𝐋𝐋 𝐍𝐎𝐖 𝐀𝐁 𝐖𝐎 𝐑𝐄𝐃 𝐖𝐀𝐋𝐀 𝐃𝐄𝐃𝐎 ")
+    await m.reply_text("𝐀𝐋𝐋 𝐃𝐎𝐍𝐄 ✅ 𝐓𝐈𝐋𝐋 𝐍𝐎𝐖 ")
 
 # Advance
 
