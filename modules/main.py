@@ -158,7 +158,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["baby"]) )
+@bot.on_message(filters.command(["money"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -311,8 +311,16 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝗦𝗨𝗠𝗜𝗧❤️✦━━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝗦𝗨𝗠𝗜𝗧❤️✦━━━━━━**'
+                cc = (
+    f"<b>🏷️ Iɴᴅᴇx ID  :</b> {str(count).zfill(3)}\n\n"
+    f"<b>🎞️  Tɪᴛʟᴇ :</b> {name1} \n\n"
+    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
+    f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
+                cc1 = (
+    f"<b>🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n"
+    f"<b>📑  Tɪᴛʟᴇ :</b> {name1} \n\n"
+    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
+    f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
                     
                 
                 if "drive" in url:
