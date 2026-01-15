@@ -316,11 +316,13 @@ async def txt_handler(bot: Client, m: Message):
     f"<b>🎞️  Tɪᴛʟᴇ :</b> {name1} \n\n"
     f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
     f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
+                )
                 cc1 = (
     f"<b>🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n"
     f"<b>📑  Tɪᴛʟᴇ :</b> {name1} \n\n"
     f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
     f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
+                )
                     
                 
                 if "drive" in url:
