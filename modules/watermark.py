@@ -12,7 +12,7 @@ def add_moving_watermark(input_video, output_video):
         "fontsize=24:"
         "shadowcolor=black:"
         "shadowx=2:shadowy=2:"
-        "x=w-mod(t*100\\,w+tw):"
+        "x=mod(t*100\\,w):"
         "y=h-40",
         "-c:a", "copy",
         output_video
