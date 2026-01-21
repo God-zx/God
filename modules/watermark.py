@@ -1,5 +1,4 @@
 import subprocess
-import os
 
 def add_moving_watermark(input_video, output_video):
     cmd = [
@@ -18,4 +17,4 @@ def add_moving_watermark(input_video, output_video):
         "-c:a", "copy",
         output_video
     ]
-    subprocess.run(cmd, check=True
+    subprocess.run(cmd, check=True)
