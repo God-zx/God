@@ -373,15 +373,18 @@ async def txt_handler(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue                       
                           
-                else:
-                    Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ @SUMIT_ZX"
-                    prog = await m.reply_text(Show)
-                    res_file = await helper.download_video(url, cmd, name)
-                    filename = res_file
-                    await prog.delete(True)
-                    await helper.send_vid(bot, m, cc, filename, thumb, name, prog)
-                    count += 1
-                    time.sleep(1)
+                res_file = await helper.download_video(url, cmd, name)
+
+# -------------------------------
+# Add watermark here
+add_moving_watermark(res_file, res_file)  # overwrite the same file
+# -------------------------------
+
+filename = res_file
+await prog.delete(True)
+await helper.send_vid(bot, m, cc, filename, thumb, name, prog)
+count += 1
+time.sleep(1)
 
             except Exception as e:
                 await m.reply_text(
