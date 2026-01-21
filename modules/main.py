@@ -311,18 +311,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = (
-    f"<b>🏷️ Iɴᴅᴇx ID  :</b> {str(count).zfill(3)}\n\n"
-    f"<b>🎞️  Tɪᴛʟᴇ :</b> {name1} \n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
-                )
-                cc1 = (
-    f"<b>🏷️ Iɴᴅᴇx ID :</b> {str(count).zfill(3)}\n\n"
-    f"<b>📑  Tɪᴛʟᴇ :</b> {name1} \n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
-                )
+                cc = f'**🎞️ VID_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}.✦\n**╰─────╯\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Resolution➥{res}\n├── Extention➥@Sumit_Zx.mkv\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**━━━━━✦𝗦𝗨𝗠𝗜𝗧❤️✦━━━━━━'
+                cc1 = f'**📁 PDF_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}✦\n**╰─────╯.\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Extention➥@Sumit_Zx.pdf\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**━━━━━✦𝗦𝗨𝗠𝗜𝗧❤️✦━━━━━━'
                     
                 
                 if "drive" in url:
