@@ -282,8 +282,7 @@ async def txt_handler(bot: Client, m: Message):
             #elif '/master.mpd' in url:
              #id =  url.split("/")[-2]
              #url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={raw_text4}"         
-            #url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={raw_text4}"
-                     
+            #url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={raw_text4}"             
             elif"d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
              url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={raw_text4}"
                      
