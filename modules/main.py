@@ -31,7 +31,7 @@ bot = Client(
     "bot",
     api_id=34943077,
     api_hash="11aeec678349456f1d190f02975ed89f",
-    bot_token="8513053042:AAH0V8QUoibqq5XF9vOqXPCw7nXHA5XUtyY"
+    bot_token="8513053042:AAHRKxqU2NJiMiZVWfB_dHEFknQhpQUtGi8"
 )
 
 my_name = "SUMIT"
